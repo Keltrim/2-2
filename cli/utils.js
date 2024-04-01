@@ -26,7 +26,7 @@ const prosessFile = async (fileName) => {
         lost: 0,
         total: attempts.length
     };
-    attempts.map((attempt) => {
+    attempts.forEach((attempt) => {
         if (attempt === 'true')
             stats.won++;
         else
